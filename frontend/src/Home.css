@@ -1,6 +1,9 @@
 .sns {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     border-bottom: 1px solid rgb(152, 152, 152);
     padding-bottom: 30px;
     margin-bottom: 10px;
@@ -11,11 +14,13 @@
     font-size: 20px;
 }
 
+
 .sns > a > img {
     margin-right: 10px;
-    width: 60px;
+    width: 50px;
     border-radius: 50%;
     background-color: gray;
+    transition: background-color 0.2s;
 }
 
 div > a {
@@ -33,6 +38,7 @@ a:hover > img {
 
 .col:hover > a {
     color: white;
+    transition: background-color 0.5s;
 }
 
 span {
