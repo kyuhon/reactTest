@@ -1,0 +1,60 @@
+.sns {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(152, 152, 152);
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.sns > a {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.sns > a > img {
+    margin-right: 10px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+div > a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover > img {
+    background-color: rgb(255, 255, 255);
+}
+
+.col > a {
+    color: gray;
+}
+
+.col:hover > a {
+    color: white;
+}
+
+span {
+    display: block;
+    margin-top: 30px;
+}
+
+.copyRight {
+   
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.copyRight img {
+    width: 120px;
+    height: 40px;
+    background-color: gray;
+    margin-right: 3px;
+}
+
+.copyRight .webCertification {
+    width: 70px;
+}
