@@ -3,10 +3,12 @@ import { Button, Container, Table } from 'react-bootstrap';
 import { useNavigate } from 'react-router';
 
 function Summary() {
-  //문제 정보
+  //문제 정보(변수)
   const [question, setQuestion] = useState([]);
 
+  //이름있는함수, 익명함수, 화살표함수
   function getQuestion(url) {
+    //비동기 처리방식(크게 3가지 - ajax,fetch,axios)
     fetch(url)
       .then((response) => {
         return response.json();

@@ -11,6 +11,12 @@ import Loop from './test/Loop';
 import Syntax2 from './test/Syntax2';
 import Question from './survey/Question';
 import Summary from './survey/Summary';
+import ListMemo from './memo/ListMemo';
+import DetailMemo from './memo/DetailMemo';
+import ListGuestbook from './guestbook/ListGuestbook';
+import ListProduct from './shop/ListProduct';
+import WriteProduct from './shop/WriteProduct';
+import DetailProduct from './shop/DetailProduct';
 
 function App() {
   return (
@@ -28,6 +34,15 @@ function App() {
           {/* 기초문법-길동팀원 */}
           <Route path="/survey/view" element={<Question />} />
           <Route path="/survey/summary" element={<Summary />} />
+          <Route path="/memo" element={<ListMemo />} />
+          <Route path="/memo/detail/:product_code" element={<DetailMemo />} />
+          <Route path="/guestbook" element={<ListGuestbook />} />
+          <Route path="/product/list" element={<ListProduct />} />
+          <Route path="/product/write" element={<WriteProduct />} />
+          <Route
+            path="/product/detail/:product_code"
+            element={<DetailProduct />}
+          />
         </Routes>
       </BrowserRouter>
     </>
